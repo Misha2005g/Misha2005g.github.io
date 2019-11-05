@@ -269,6 +269,7 @@ function myjsapp(peerClient) {
         },
         setTheirVideo : function (stream) {
             var video = document.getElementById('their-video');
+
             if (typeof video.srcObject == "object") {
                 video.srcObject = stream;
             } else {
@@ -296,7 +297,7 @@ function myjsapp(peerClient) {
                 return
             }
             for (var i = 0; i < users.length; i++) {
-                var usr = '<li class="peeruser">'+ users[i] + '</li>'
+                var usr = '<l class="peeruser">'+ users[i] + '</l>'
                 list.append(usr);
             }
         }
