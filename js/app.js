@@ -297,7 +297,7 @@ function myjsapp(peerClient) {
                 return
             }
             for (var i = 0; i < users.length; i++) {
-                var usr = '<l class="peeruser">'+ users[i] + '</l>'
+                var usr = '<li class="peeruser">'+ users[i] + '</li>'
                 list.append(usr);
             }
         }
